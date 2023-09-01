@@ -24,7 +24,7 @@ namespace Clients.ConsoleTwo
 
         public Task ShowTime(DateTime currentTime)
         {
-            _logger.LogInformation("{CurrentTime}", currentTime.ToShortTimeString());
+            _logger.LogInformation("{CurrentTime}", currentTime.ToString());
 
             return Task.CompletedTask;
         }
